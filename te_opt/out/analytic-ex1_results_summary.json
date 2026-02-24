@@ -1,0 +1,39 @@
+{
+  "settings": {
+    "cmi_estimator": "JidtKraskovCMI",
+    "max_lag_sources": 3,
+    "min_lag_sources": 1,
+    "tau_min": 1,
+    "tau_max": 1,
+    "n_perm_max_stat": 100,
+    "n_perm_omnibus": 100,
+    "verbosity": 0,
+    "verbose": true,
+    "fdr_correction": true,
+    "write_ckp": false,
+    "add_conditionals": null,
+    "tau_target": 1,
+    "tau_sources": 1,
+    "local_values": false,
+    "max_lag_target": 3,
+    "algorithm_num": 1,
+    "kraskov_k": "4",
+    "normalise": "false",
+    "theiler_t": "0",
+    "noise_level": 1e-08,
+    "num_threads": "USE_ALL",
+    "debug": false,
+    "alpha_max_stat": 0.05,
+    "permute_in_time": true,
+    "perm_type": "random",
+    "analytical_surrogates": false,
+    "alpha_fdr": 0.05,
+    "fdr_correct_by_target": true,
+    "fdr_constant": 2
+  },
+  "targets_analysed": [
+    0,
+    1,
+    2
+  ]
+}

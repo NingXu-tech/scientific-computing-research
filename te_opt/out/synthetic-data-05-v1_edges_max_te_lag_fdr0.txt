@@ -1,0 +1,6 @@
+0 -> 1, max_te_lag = 1
+1 -> 2, max_te_lag = 1
+1 -> 3, max_te_lag = 1
+2 -> 5, max_te_lag = 1
+3 -> 4, max_te_lag = 3
+4 -> 5, max_te_lag = 3

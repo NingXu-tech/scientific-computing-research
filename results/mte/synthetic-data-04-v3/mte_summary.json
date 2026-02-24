@@ -1,0 +1,57 @@
+{
+  "file": "dataset/synthetic-data-04-v3.csv",
+  "shape_vars_time": [
+    3,
+    50000
+  ],
+  "elapsed_sec": 17937.810713768005,
+  "settings": {
+    "cmi_estimator": "JidtKraskovCMI",
+    "max_lag_sources": 15,
+    "min_lag_sources": 1,
+    "n_perm_max_stat": 200,
+    "n_perm_omnibus": 200,
+    "n_perm_max_seq": 200,
+    "alpha_max_stat": 0.05,
+    "alpha_min_stat": 0.05,
+    "alpha_omnibus": 0.05,
+    "fdr_correction": false,
+    "tau_min": 1,
+    "tau_max": 1,
+    "verbosity": 0,
+    "verbose": true,
+    "write_ckp": false
+  },
+  "targets": {
+    "0": {
+      "sources_fdr_false": "[]",
+      "delays_fdr_false": "[]"
+    },
+    "1": {
+      "sources_fdr_false": "[0]",
+      "delays_fdr_false": "[3]"
+    },
+    "2": {
+      "sources_fdr_false": "[0 1]",
+      "delays_fdr_false": "[ 6 11]"
+    }
+  },
+  "adjacency_max_te_lag_fdr_false": [
+    [
+      0,
+      3,
+      6
+    ],
+    [
+      0,
+      0,
+      11
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "adjacency_max_te_lag_fdr_true": null
+}

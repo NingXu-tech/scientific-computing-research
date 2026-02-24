@@ -1,0 +1,6 @@
+0 -> 1, vars_count = 2
+1 -> 2, vars_count = 1
+1 -> 3, vars_count = 1
+2 -> 5, vars_count = 1
+3 -> 4, vars_count = 1
+4 -> 5, vars_count = 1

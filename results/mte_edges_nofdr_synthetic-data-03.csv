@@ -1,0 +1,5 @@
+dataset,mode,source,target,lag
+synthetic-data-03-v1,fdr_false,0,1,12
+synthetic-data-03-v2,fdr_false,0,1,12
+synthetic-data-03-v3,fdr_false,0,1,12
+synthetic-data-03-v4,fdr_false,0,1,12

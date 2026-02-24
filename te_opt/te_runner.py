@@ -1,0 +1,173 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+import json
+import numpy as np
+
+from idtxl.data import Data
+from idtxl.multivariate_te import MultivariateTE
+
+
+@dataclass
+class TERunConfig:
+    cmi_estimator: str = "JidtKraskovCMI"
+    max_lag_sources: int = 3
+    min_lag_sources: int = 1
+    tau_min: int = 1
+    tau_max: int = 1
+    n_perm_max_stat: int = 100
+    n_perm_omnibus: int = 100
+    verbosity: int = 0
+
+    def to_settings(self) -> dict:
+        return {
+            "cmi_estimator": self.cmi_estimator,
+            "max_lag_sources": self.max_lag_sources,
+            "min_lag_sources": self.min_lag_sources,
+            "tau_min": self.tau_min,
+            "tau_max": self.tau_max,
+            "n_perm_max_stat": self.n_perm_max_stat,
+            "n_perm_omnibus": self.n_perm_omnibus,
+            "verbosity": self.verbosity,
+        }
+
+
+def run_multivariate_te(
+    data_array: np.ndarray,
+    *,
+    dim_order: str = "ps",
+    cfg: TERunConfig | None = None,
+):
+    if cfg is None:
+        cfg = TERunConfig()
+
+    data = Data(np.asarray(data_array), dim_order=dim_order)
+    settings = cfg.to_settings()
+
+    net = MultivariateTE()
+    results = net.analyse_network(settings=settings, data=data)
+    return results
+
+
+def dump_results_debug(results, out_dir: str | Path, prefix: str) -> None:
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    (out_dir / f"{prefix}_results_dir.json").write_text(
+        json.dumps(sorted(dir(results)), indent=2),
+        encoding="utf-8",
+    )
+
+    summary = {}
+    for k in ["settings", "targets_analysed", "processes_analysed", "n_processes", "n_samples"]:
+        if hasattr(results, k):
+            try:
+                v = getattr(results, k)
+                summary[k] = v if isinstance(v, (str, int, float, list, dict, bool, type(None))) else str(type(v))
+            except Exception as e:
+                summary[k] = f"<error: {e}>"
+
+    (out_dir / f"{prefix}_results_summary.json").write_text(
+        json.dumps(summary, indent=2),
+        encoding="utf-8",
+    )
+def _pick_weights(results) -> str:
+    for w in ["te", "TE", "cmi", "CMI", "mi", "MI", "ais", "AIS"]:
+        try:
+            results.get_adjacency_matrix(w, fdr=False)
+            return w
+        except Exception:
+            continue
+    raise RuntimeError("Could not find a working `weights` key for this IDTxl Results object.")
+
+def export_te_results(
+    results,
+    *,
+    out_dir: str | Path,
+    prefix: str,
+    weights: str | None = None,
+    fdr: bool = True,
+) -> None:
+    import io
+    import json
+    import contextlib
+    import numpy as np
+
+    if weights is None:
+        weights = _pick_weights(results)
+
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    edge_txt = out_dir / f"{prefix}_edge_list_{weights}_fdr{int(fdr)}.txt"
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        results.print_edge_list(weights, fdr=fdr)
+    edge_txt.write_text(buf.getvalue(), encoding="utf-8")
+
+    adj = np.asarray(results.get_adjacency_matrix(weights, fdr=fdr))
+    if adj.ndim == 2:
+        np.savetxt(out_dir / f"{prefix}_adj_{weights}_fdr{int(fdr)}.csv", adj, delimiter=",")
+    elif adj.ndim == 3:
+        for lag in range(adj.shape[2]):
+            np.savetxt(out_dir / f"{prefix}_adj_{weights}_lag{lag}_fdr{int(fdr)}.csv",
+                       adj[:, :, lag], delimiter=",")
+    else:
+        (out_dir / f"{prefix}_adj_shape.txt").write_text(str(adj.shape), encoding="utf-8")
+
+    summary = {"weights": weights, "fdr": fdr, "targets": {}}
+    for t in getattr(results, "targets_analysed", []):
+        try:
+            summary["targets"][str(t)] = {
+                "sources": results.get_target_sources(t, fdr=fdr),
+                "delays": results.get_target_delays(t, fdr=fdr),
+            }
+        except Exception as e:
+            summary["targets"][str(t)] = {"_error": str(e)}
+
+    (out_dir / f"{prefix}_targets_{weights}_fdr{int(fdr)}.json").write_text(
+        json.dumps(summary, indent=2, default=str),
+        encoding="utf-8",
+    )
+
+def _adj_to_numpy(adj):
+
+    if hasattr(adj, "matrix"):
+        return np.asarray(adj.matrix)
+    if hasattr(adj, "get_matrix"):
+        return np.asarray(adj.get_matrix())
+    if hasattr(adj, "to_array"):
+        return np.asarray(adj.to_array())
+    raise RuntimeError(f"Don't know how to convert adjacency to numpy. attrs={dir(adj)[:30]}")
+
+def export_te_results(results, *, out_dir: str | Path, prefix: str, fdr: bool) -> None:
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    for weights in ["binary", "vars_count", "max_te_lag", "max_p_lag"]:
+        adj = results.get_adjacency_matrix(weights=weights, fdr=fdr)
+        mat = _adj_to_numpy(adj)
+        np.savetxt(out_dir / f"{prefix}_{weights}_fdr{int(fdr)}.csv", mat, delimiter=",", fmt="%.6g")
+
+    for weights in ["binary", "max_te_lag", "vars_count"]:
+        p = out_dir / f"{prefix}_edges_{weights}_fdr{int(fdr)}.txt"
+        with p.open("w", encoding="utf-8") as f:
+            import contextlib
+            with contextlib.redirect_stdout(f):
+                results.print_edge_list(weights, fdr=fdr)
+def _adj_to_numpy(adj):
+    
+    try:
+        return np.asarray(adj)
+    except Exception:
+        pass
+
+    for attr in ("matrix", "_matrix", "_adjacency_matrix", "adjacency_matrix"):
+        if hasattr(adj, attr):
+            return np.asarray(getattr(adj, attr))
+
+    raise RuntimeError(
+        f"Don't know how to convert adjacency to numpy. "
+        f"has __array__={hasattr(adj,'__array__')} attrs={dir(adj)[:50]}"
+    )
