@@ -1,57 +1,25 @@
 {
+  "edge_list_max_te_lag_fdr_false": {
+    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
+  },
+  "edge_list_max_te_lag_fdr_true": {
+    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
+  },
   "file": "dataset/synthetic-data-03-v3.csv",
-  "shape_vars_time": [
-    3,
-    50000
-  ],
-  "elapsed_sec": 20537.095678329468,
   "settings": {
-    "cmi_estimator": "JidtKraskovCMI",
-    "max_lag_sources": 15,
-    "min_lag_sources": 1,
-    "n_perm_max_stat": 200,
-    "n_perm_omnibus": 200,
-    "n_perm_max_seq": 200,
     "alpha_max_stat": 0.05,
     "alpha_min_stat": 0.05,
     "alpha_omnibus": 0.05,
+    "cmi_estimator": "JidtGaussianCMI",
     "fdr_correction": false,
+    "max_lag_sources": 5,
+    "min_lag_sources": 1,
+    "n_perm_max_stat": 200,
+    "n_perm_omnibus": 200,
+    "tau_max": 5,
     "tau_min": 1,
-    "tau_max": 1,
+    "verbose": false,
     "verbosity": 0,
-    "verbose": true,
     "write_ckp": false
-  },
-  "targets": {
-    "0": {
-      "sources_fdr_false": "[]",
-      "delays_fdr_false": "[]"
-    },
-    "1": {
-      "sources_fdr_false": "[0]",
-      "delays_fdr_false": "[12]"
-    },
-    "2": {
-      "sources_fdr_false": "[0 1]",
-      "delays_fdr_false": "[15  7]"
-    }
-  },
-  "adjacency_max_te_lag_fdr_false": [
-    [
-      0,
-      12,
-      15
-    ],
-    [
-      0,
-      0,
-      7
-    ],
-    [
-      0,
-      0,
-      0
-    ]
-  ],
-  "adjacency_max_te_lag_fdr_true": null
+  }
 }

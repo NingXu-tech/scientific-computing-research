@@ -1,11 +1,11 @@
 {
   "edge_list_max_te_lag_fdr_false": {
-    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
+    "_error": "dataset/brownian-data-y2.dat not found."
   },
   "edge_list_max_te_lag_fdr_true": {
-    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
+    "_error": "dataset/brownian-data-y2.dat not found."
   },
-  "file": "dataset/sim-ex1.dat",
+  "file": "dataset/brownian-data-y2.dat",
   "settings": {
     "alpha_max_stat": 0.05,
     "alpha_min_stat": 0.05,

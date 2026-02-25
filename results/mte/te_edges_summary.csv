@@ -1,27 +1,27 @@
 dataset,summary_path,edge_list_key,n_edges,note
-analytic-ex1,results/mte/analytic-ex1/mte_summary.json,,0,no edge list key found
-brownian-data-y1_0,results/mte/brownian-data-y1_0/mte_summary.json,,0,no edge list key found
-brownian-data-y2_0,results/mte/brownian-data-y2_0/mte_summary.json,,0,no edge list key found
-brownian-data-y3_0,results/mte/brownian-data-y3_0/mte_summary.json,,0,no edge list key found
-sim-ex1,results/mte/sim-ex1/mte_summary.json,,0,no edge list key found
-sim-ex2,results/mte/sim-ex2/mte_summary.json,,0,no edge list key found
-synthetic-data-01-v1,results/mte/synthetic-data-01-v1/mte_summary.json,,0,no edge list key found
-synthetic-data-01-v2,results/mte/synthetic-data-01-v2/mte_summary.json,,0,no edge list key found
-synthetic-data-01-v3,results/mte/synthetic-data-01-v3/mte_summary.json,,0,no edge list key found
-synthetic-data-01-v4,results/mte/synthetic-data-01-v4/mte_summary.json,,0,no edge list key found
-synthetic-data-02-v1,results/mte/synthetic-data-02-v1/mte_summary.json,,0,no edge list key found
-synthetic-data-02-v2,results/mte/synthetic-data-02-v2/mte_summary.json,,0,no edge list key found
-synthetic-data-02-v3,results/mte/synthetic-data-02-v3/mte_summary.json,,0,no edge list key found
-synthetic-data-02-v4,results/mte/synthetic-data-02-v4/mte_summary.json,,0,no edge list key found
-synthetic-data-03-v1,results/mte/synthetic-data-03-v1/mte_summary.json,,0,no edge list key found
-synthetic-data-03-v2,results/mte/synthetic-data-03-v2/mte_summary.json,,0,no edge list key found
-synthetic-data-03-v3,results/mte/synthetic-data-03-v3/mte_summary.json,,0,no edge list key found
-synthetic-data-03-v4,results/mte/synthetic-data-03-v4/mte_summary.json,,0,no edge list key found
-synthetic-data-04-v1,results/mte/synthetic-data-04-v1/mte_summary.json,,0,no edge list key found
-synthetic-data-04-v2,results/mte/synthetic-data-04-v2/mte_summary.json,,0,no edge list key found
-synthetic-data-04-v3,results/mte/synthetic-data-04-v3/mte_summary.json,,0,no edge list key found
-synthetic-data-04-v4,results/mte/synthetic-data-04-v4/mte_summary.json,,0,no edge list key found
-synthetic-data-05-v1,results/mte/synthetic-data-05-v1/mte_summary.json,,0,no edge list key found
-synthetic-data-05-v2,results/mte/synthetic-data-05-v2/mte_summary.json,,0,no edge list key found
-synthetic-data-05-v3,results/mte/synthetic-data-05-v3/mte_summary.json,,0,no edge list key found
-synthetic-data-05-v4,results/mte/synthetic-data-05-v4/mte_summary.json,,0,no edge list key found
+analytic-ex1,results/mte/analytic-ex1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+brownian-data-y1,results/mte/brownian-data-y1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+brownian-data-y2,results/mte/brownian-data-y2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+brownian-data-y3,results/mte/brownian-data-y3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+sim-ex1,results/mte/sim-ex1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+sim-ex2,results/mte/sim-ex2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-01-v1,results/mte/synthetic-data-01-v1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-01-v2,results/mte/synthetic-data-01-v2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-01-v3,results/mte/synthetic-data-01-v3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-01-v4,results/mte/synthetic-data-01-v4/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-02-v1,results/mte/synthetic-data-02-v1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-02-v2,results/mte/synthetic-data-02-v2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-02-v3,results/mte/synthetic-data-02-v3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-02-v4,results/mte/synthetic-data-02-v4/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-03-v1,results/mte/synthetic-data-03-v1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-03-v2,results/mte/synthetic-data-03-v2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-03-v3,results/mte/synthetic-data-03-v3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-03-v4,results/mte/synthetic-data-03-v4/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-04-v1,results/mte/synthetic-data-04-v1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-04-v2,results/mte/synthetic-data-04-v2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-04-v3,results/mte/synthetic-data-04-v3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-04-v4,results/mte/synthetic-data-04-v4/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-05-v1,results/mte/synthetic-data-05-v1/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-05-v2,results/mte/synthetic-data-05-v2/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-05-v3,results/mte/synthetic-data-05-v3/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
+synthetic-data-05-v4,results/mte/synthetic-data-05-v4/mte_summary.json,edge_list_max_te_lag_fdr_false,0,SKIP(existing)
