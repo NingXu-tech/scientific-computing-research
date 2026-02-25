@@ -1,0 +1,5 @@
+Dataset A: Screened 6 -> Selected 6 Candidates. Savings: 0.0%. Recall: 100.0%.
+Dataset B: Screened 6 -> Selected 6 Candidates. Savings: 0.0%. Recall: 100.0%.
+Dataset C: Screened 6 -> Selected 6 Candidates. Savings: 0.0%. Recall: 100.0%.
+Dataset D: Screened 6 -> Selected 5 Candidates. Savings: 16.7%. Recall: 66.7%.
+Dataset E: Screened 30 -> Selected 30 Candidates. Savings: 0.0%. Recall: 100.0%.

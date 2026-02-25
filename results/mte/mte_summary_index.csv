@@ -1,0 +1,9 @@
+run_dir,file,method,source,target,n_samples,n_vars,note
+synthetic-data-03-v1,mte/synthetic-data-03-v1/mte_summary.json,,,,,,
+synthetic-data-03-v2,mte/synthetic-data-03-v2/mte_summary.json,,,,,,
+synthetic-data-03-v3,mte/synthetic-data-03-v3/mte_summary.json,,,,,,
+synthetic-data-03-v4,mte/synthetic-data-03-v4/mte_summary.json,,,,,,
+synthetic-data-04-v1,mte/synthetic-data-04-v1/mte_summary.json,,,,,,
+synthetic-data-04-v2,mte/synthetic-data-04-v2/mte_summary.json,,,,,,
+synthetic-data-04-v3,mte/synthetic-data-04-v3/mte_summary.json,,,,,,
+synthetic-data-04-v4,mte/synthetic-data-04-v4/mte_summary.json,,,,,,

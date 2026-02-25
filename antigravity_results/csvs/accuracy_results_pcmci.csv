@@ -1,0 +1,6 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+PCMCI,A,2,2,2,0,0.67
+PCMCI,B,3,1,2,0,0.83
+PCMCI,C,3,2,1,0,0.67
+PCMCI,D,3,3,0,0,0.50
+PCMCI,E,6,6,18,0,0.80

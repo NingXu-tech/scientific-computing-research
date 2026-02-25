@@ -1,0 +1,6 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+Observational Tail (GTD) + Surrogates + BH-FDR,A,2.00,2.00,2.00,0.00,0.67
+Observational Tail (GTD) + Surrogates + BH-FDR,B,3.00,0.00,3.00,0.00,1.00
+Observational Tail (GTD) + Surrogates + BH-FDR,C,0.00,0.00,4.00,2.00,0.67
+Observational Tail (GTD) + Surrogates + BH-FDR,D,0.00,0.00,3.00,3.00,0.50
+Observational Tail (GTD) + Surrogates + BH-FDR,E,0.00,0.00,24.00,6.00,0.80

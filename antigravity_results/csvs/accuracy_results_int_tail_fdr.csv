@@ -1,0 +1,6 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+Interventional Tail (Transition JS) + Surrogates + BH-FDR,A,2.00,1.00,3.00,0.00,0.83
+Interventional Tail (Transition JS) + Surrogates + BH-FDR,B,3.00,0.00,3.00,0.00,1.00
+Interventional Tail (Transition JS) + Surrogates + BH-FDR,C,2.00,1.00,3.00,0.00,0.83
+Interventional Tail (Transition JS) + Surrogates + BH-FDR,D,3.00,0.00,3.00,0.00,1.00
+Interventional Tail (Transition JS) + Surrogates + BH-FDR,E,6.00,5.00,19.00,0.00,0.83

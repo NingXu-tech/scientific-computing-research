@@ -1,0 +1,6 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+Interventional Tail (Marginal JS),A,2.00,1.00,3.00,0.00,0.83
+Interventional Tail (Marginal JS),B,3.00,0.00,3.00,0.00,1.00
+Interventional Tail (Marginal JS),C,2.00,1.00,3.00,0.00,0.83
+Interventional Tail (Marginal JS),D,3.00,0.00,3.00,0.00,1.00
+Interventional Tail (Marginal JS),E,6.00,5.00,19.00,0.00,0.83

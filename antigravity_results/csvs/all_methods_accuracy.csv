@@ -1,0 +1,16 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+Interventional TE,DatasetA,2.0±0.0,4.0±0.0,3.0±0.0,0.0±0.0,0.83
+Interventional TE,DatasetB,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.00
+Interventional TE,DatasetC,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.00
+Interventional TE,DatasetD,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.00
+Interventional TE,DatasetE,6.0±0.0,24.0±0.0,6.0±0.0,0.0±0.0,0.40
+Spectral DeltaStat (Driver),DatasetA,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaStat (Driver),DatasetB,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaStat (Driver),DatasetC,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaStat (Driver),DatasetD,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaStat (Driver),DatasetE,5.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.83
+Spectral DeltaKin (Driver),DatasetA,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaKin (Driver),DatasetB,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaKin (Driver),DatasetC,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaKin (Driver),DatasetD,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67
+Spectral DeltaKin (Driver),DatasetE,5.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.83

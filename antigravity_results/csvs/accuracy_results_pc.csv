@@ -1,0 +1,6 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy
+PC,A,0,0,4,2,0.67
+PC,B,0,0,3,3,0.50
+PC,C,0,0,3,3,0.50
+PC,D,0,0,3,3,0.50
+PC,E,0,5,19,6,0.63
