@@ -1,0 +1,25 @@
+{
+  "edge_list": [],
+  "fdr": false,
+  "file": "dataset/brownian-data-y3_0.dat",
+  "n_edges": 0,
+  "raw_edge_list_preview": [
+    "No significant links found in the network."
+  ],
+  "settings": {
+    "alpha_max_stat": 0.2,
+    "alpha_min_stat": 0.2,
+    "alpha_omnibus": 0.2,
+    "cmi_estimator": "JidtGaussianCMI",
+    "fdr_correction": false,
+    "max_lag_sources": 15,
+    "min_lag_sources": 1,
+    "n_perm_max_stat": 200,
+    "n_perm_omnibus": 200,
+    "tau_max": 15,
+    "tau_min": 1,
+    "verbose": false,
+    "write_ckp": false
+  },
+  "weight_key": "max_te_lag"
+}

@@ -1,0 +1,7 @@
+dataset,alpha,tau_max,n_perm,estimator,n_edges,summary_path
+analytic-ex1,0.05,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p05/analytic-ex1/mte_summary.json
+brownian-data-y3_0,0.05,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p05/brownian-data-y3_0/mte_summary.json
+analytic-ex1,0.1,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p1/analytic-ex1/mte_summary.json
+brownian-data-y3_0,0.1,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p1/brownian-data-y3_0/mte_summary.json
+analytic-ex1,0.2,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p2/analytic-ex1/mte_summary.json
+brownian-data-y3_0,0.2,15,200,JidtGaussianCMI,0,results/mte_sweep_alpha/alpha0p2/brownian-data-y3_0/mte_summary.json

@@ -1,0 +1,25 @@
+{
+  "file": "dataset/analytic-ex1.dat",
+  "shape_vars_time": [
+    3,
+    1000000
+  ],
+  "settings": {
+    "cmi_estimator": "JidtGaussianCMI",
+    "tau_min": 1,
+    "tau_max": 15,
+    "max_lag_sources": 15,
+    "min_lag_sources": 1,
+    "n_perm_max_stat": 200,
+    "n_perm_omnibus": 200,
+    "alpha_max_stat": 0.05,
+    "alpha_min_stat": 0.05,
+    "alpha_omnibus": 0.05,
+    "fdr_correction": false,
+    "verbose": false,
+    "write_ckp": false
+  },
+  "fdr": false,
+  "edge_list": [],
+  "n_edges": 0
+}
