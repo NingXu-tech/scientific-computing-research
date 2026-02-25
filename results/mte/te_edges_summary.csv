@@ -1,0 +1,9 @@
+dataset,summary_path,edge_list_key,n_edges,note
+synthetic-data-03-v1,results/mte/synthetic-data-03-v1/mte_summary.json,,0,no edge list key found
+synthetic-data-03-v2,results/mte/synthetic-data-03-v2/mte_summary.json,,0,no edge list key found
+synthetic-data-03-v3,results/mte/synthetic-data-03-v3/mte_summary.json,,0,no edge list key found
+synthetic-data-03-v4,results/mte/synthetic-data-03-v4/mte_summary.json,,0,no edge list key found
+synthetic-data-04-v1,results/mte/synthetic-data-04-v1/mte_summary.json,,0,no edge list key found
+synthetic-data-04-v2,results/mte/synthetic-data-04-v2/mte_summary.json,,0,no edge list key found
+synthetic-data-04-v3,results/mte/synthetic-data-04-v3/mte_summary.json,,0,no edge list key found
+synthetic-data-04-v4,results/mte/synthetic-data-04-v4/mte_summary.json,,0,no edge list key found
