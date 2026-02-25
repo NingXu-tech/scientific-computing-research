@@ -1,0 +1,46 @@
+{
+  "file": "dataset/brownian-data-y1_0.dat",
+  "shape_vars_time": [
+    3,
+    50000
+  ],
+  "settings": {
+    "cmi_estimator": "JidtKraskovCMI",
+    "max_lag_sources": 6,
+    "min_lag_sources": 1,
+    "n_perm_max_stat": 100,
+    "n_perm_omnibus": 100,
+    "alpha_max_stat": 0.05,
+    "alpha_min_stat": 0.05,
+    "alpha_omnibus": 0.05,
+    "fdr_correction": true,
+    "tau_min": 1,
+    "tau_max": 1,
+    "verbosity": 0,
+    "verbose": true,
+    "write_ckp": false
+  },
+  "targets": {
+    "0": {
+      "sources_fdr_false": "[1 2]",
+      "delays_fdr_false": "[4 5]",
+      "fdr_true_error": "No FDR-corrected results for target 0. Set fdr=False to see uncorrected results."
+    },
+    "1": {
+      "sources_fdr_false": "[0 2]",
+      "delays_fdr_false": "[4 4]",
+      "fdr_true_error": "No FDR-corrected results for target 1. Set fdr=False to see uncorrected results."
+    },
+    "2": {
+      "sources_fdr_false": "[1]",
+      "delays_fdr_false": "[6]",
+      "fdr_true_error": "No FDR-corrected results for target 2. Set fdr=False to see uncorrected results."
+    }
+  },
+  "edge_list_max_te_lag_fdr_false": {
+    "_error": "'AdjacencyMatrix' object has no attribute 'matrix'"
+  },
+  "edge_list_max_te_lag_fdr_true": {
+    "_error": "No FDR-corrected results for target 0. Set fdr=False to see uncorrected results."
+  }
+}
