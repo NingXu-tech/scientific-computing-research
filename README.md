@@ -97,6 +97,17 @@ jupyter notebook
   
 ---
 
+## TE (MTE) deliverables (reproducible)
+
+1. Export TE edge summary tables
+
+```bash
+source .venv310/bin/activate
+python export_te_edges_summary.py
+python export_te_edges_long.py
+
+---
+
 ## References and Acknowledgements
 
 * Some implementations are based on the following libraries:
