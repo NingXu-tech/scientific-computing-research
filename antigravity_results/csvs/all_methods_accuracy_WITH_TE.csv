@@ -1,0 +1,17 @@
+Method,Dataset,TP,FP,TN,FN,Accuracy,method,Precision,Recall,F1,Precision_lag,Recall_lag,F1_lag
+Interventional TE,DatasetA,2.0±0.0,4.0±0.0,3.0±0.0,0.0±0.0,0.83,,,,,,,
+Interventional TE,DatasetB,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.0,,,,,,,
+Interventional TE,DatasetC,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.0,,,,,,,
+Interventional TE,DatasetD,3.0±0.0,3.0±0.0,3.0±0.0,0.0±0.0,1.0,,,,,,,
+Interventional TE,DatasetE,6.0±0.0,24.0±0.0,6.0±0.0,0.0±0.0,0.4,,,,,,,
+Spectral DeltaStat (Driver),DatasetA,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaStat (Driver),DatasetB,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaStat (Driver),DatasetC,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaStat (Driver),DatasetD,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaStat (Driver),DatasetE,5.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.83,,,,,,,
+Spectral DeltaKin (Driver),DatasetA,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaKin (Driver),DatasetB,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaKin (Driver),DatasetC,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaKin (Driver),DatasetD,2.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.67,,,,,,,
+Spectral DeltaKin (Driver),DatasetE,5.0±0.0,1.0±0.0,0.0±0.0,0.0±0.0,0.83,,,,,,,
+,,,,,,,TE (MTE),0.7898809523809521,0.8690476190476188,0.8209338280766852,0.4731292517006801,0.5595238095238094,0.5066429602143888
