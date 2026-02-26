@@ -32,3 +32,26 @@ Thumbs.db
 # 本地配置
 .vscode/
 .idea/
+
+# ---- local env ----
+.venv*/
+__pycache__/
+*.pyc
+
+# ---- local restore / trash ----
+_restore_from_backup/
+_trash_mte_*/
+*_trash_*/
+
+# ---- external packages / shared zips ----
+external/
+antigravity_results/code_snapshot/
+
+# ---- binary results (keep CSV/JSON only) ----
+results/**/*.pkl
+results/**/*.npy
+results/**/*.npz
+results/**/*.ckp
+
+# ---- scratch scripts ----
+run_mte_all.py.BAD_*
