@@ -44,7 +44,6 @@ _trash_mte_*/
 *_trash_*/
 
 # ---- external packages / shared zips ----
-external/
 antigravity_results/code_snapshot/
 
 # ---- binary results (keep CSV/JSON only) ----
@@ -63,7 +62,6 @@ __pycache__/
 # large / derived / temporary
 _restore_from_backup/
 _trash_mte_*/
-external/
 antigravity_results/code_snapshot/
 
 # binary outputs (keep only if you really want them versioned)
@@ -80,3 +78,9 @@ results/mte_sweep*/**/results.pkl
 external/*            # ignore everything directly under external
 !external/antigravity/   # unignore this subdir
 !external/antigravity/** # unignore all its contents
+
+# --- keep external ignored except antigravity ---
+!external/
+external/*
+!external/antigravity/
+!external/antigravity/**
