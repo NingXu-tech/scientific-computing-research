@@ -1,11 +1,34 @@
 {
-  "edge_list_max_te_lag_fdr_false": {
-    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
-  },
-  "edge_list_max_te_lag_fdr_true": {
-    "_error": "'numpy.ndarray' object has no attribute 'n_processes'"
-  },
+  "edge_list": [
+    {
+      "dst": 1,
+      "max_te_lag": 1.0,
+      "src": 0
+    },
+    {
+      "dst": 3,
+      "max_te_lag": 4.0,
+      "src": 0
+    },
+    {
+      "dst": 5,
+      "max_te_lag": 1.0,
+      "src": 2
+    },
+    {
+      "dst": 4,
+      "max_te_lag": 5.0,
+      "src": 3
+    },
+    {
+      "dst": 5,
+      "max_te_lag": 4.0,
+      "src": 4
+    }
+  ],
+  "fdr": false,
   "file": "dataset/synthetic-data-05-v2.csv",
+  "n_edges": 5,
   "settings": {
     "alpha_max_stat": 0.05,
     "alpha_min_stat": 0.05,
@@ -19,7 +42,11 @@
     "tau_max": 5,
     "tau_min": 1,
     "verbose": false,
-    "verbosity": 0,
     "write_ckp": false
-  }
+  },
+  "shape_vars_time": [
+    6,
+    50000
+  ],
+  "weights": "max_te_lag"
 }

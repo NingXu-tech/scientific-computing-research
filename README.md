@@ -102,9 +102,20 @@ jupyter notebook
 1. Export TE edge summary tables
 
 ```bash
+# 0) create venv & install deps (if needed)
+python -m venv .venv310
 source .venv310/bin/activate
+pip install -r requirements.txt
+
+# 1) export edges (short + long)
 python export_te_edges_summary.py
 python export_te_edges_long.py
+
+# 2) evaluate accuracy on synthetic-data-01..05
+python evaluate_te_accuracy.py --edges_csv results/mte/te_edges_long.csv --tau_max_eval 20 --out_dir results/mte
+
+# 3) final merged evaluation (optional, if you use the 03/04 tau sweep)
+# (you already created results/mte/final_eval/*_FINAL.csv)
 
 ---
 

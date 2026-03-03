@@ -1,0 +1,2 @@
+scope,v,d,pred_edges,pred_edges_lag,TP,FP,FN,TN,Precision,Recall,F1,TP_lag,FP_lag,FN_lag,TN_lag,Precision_lag,Recall_lag,F1_lag
+overall_mean,2.5,3.6,3.5,3.5,2.45,1.05,0.95,6.35,0.7683333333333333,0.8166666666666667,0.785021645021645,1.4,2.1,2.4,210.1,0.4633333333333332,0.4833333333333332,0.4713203463203463
