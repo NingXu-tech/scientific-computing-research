@@ -55,3 +55,28 @@ results/**/*.ckp
 
 # ---- scratch scripts ----
 run_mte_all.py.BAD_*
+# venv / python cache
+.venv*/
+__pycache__/
+*.pyc
+
+# large / derived / temporary
+_restore_from_backup/
+_trash_mte_*/
+external/
+antigravity_results/code_snapshot/
+
+# binary outputs (keep only if you really want them versioned)
+results/mte/*/results.pkl
+results/mte_sweep*/**/results.pkl
+
+# OS / editor
+.vscode/
+.DS_Store
+
+
+# --- allow tracking ONLY external/antigravity, keep the rest of external ignored ---
+!external/            # allow Git to traverse the external dir
+external/*            # ignore everything directly under external
+!external/antigravity/   # unignore this subdir
+!external/antigravity/** # unignore all its contents
